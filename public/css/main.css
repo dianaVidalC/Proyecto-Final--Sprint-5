@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*.tamaño{
+    width: 15rem!important;
+    margin: 5rem;
+}*/
+
+.boton-reg{
+    margin:3rem;
+    width: 80%;
+}
+
+/*---screenTwo---*/
+
+.color-boton{
+    background-color: #fbd43b;
+}
+
+p.color-gris{
+    color: #8f8f8f;
+}
+
+span.color-turq{
+    color: #00c3a3;
+}
+
+.input-field .input-number{
+    margin: 0!important;
+    width: 80%!important;
+    padding-left: 5rem;
+}
+
+.input-field i{
+    color: #8f8f8f;
+}
+
+.margin-button{
+    margin:7rem;
+}
+
+.check{
+    padding-top: 5rem;
+}
