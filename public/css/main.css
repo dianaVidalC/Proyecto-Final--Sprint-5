@@ -3,16 +3,27 @@
     margin: 0;
 }
 
-/*.tamaño{
+.tamaño{
     width: 15rem!important;
     margin: 5rem;
-}*/
+}
 
 .boton-reg{
     margin:3rem;
     width: 80%;
 }
 
+.carousel.initialized{
+    height: 36rem!important;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #f64552;
+}
+
+.carousel .indicators .indicator-item{
+    background-color: #f8f8f8;
+}
 /*---screenTwo---*/
 
 .color-boton{
@@ -44,3 +55,5 @@ span.color-turq{
 .check{
     padding-top: 5rem;
 }
+
+

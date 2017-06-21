@@ -8,13 +8,13 @@ const render=(root)=>{
     root.empty();
 
         const wrapper=$('<div class="wrapper"></div>');
-    if(state.screenOne=="true") {
+    if(state.screenOne==="true") {
         wrapper.append(ScreenOne(_ => {
-            render(root)
+            render(root);
         }));
     }else if(state.screenTwo==="true"){
         wrapper.append(ScreenTwo(_ => {
-            render(root)
+            render(root);
         }));
     }
 
