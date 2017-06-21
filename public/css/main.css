@@ -1,15 +1,18 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
+
 }
 
 .tamaño{
     width: 15rem!important;
-    margin: 5rem;
+    margin-left: 4rem;
+    margin-top: 6rem;
 }
 
 .boton-reg{
-    margin:3rem;
+    margin-left:2.5rem;
     width: 80%;
 }
 
@@ -40,20 +43,52 @@ span.color-turq{
 
 .input-field .input-number{
     margin: 0!important;
-    width: 80%!important;
-    padding-left: 5rem;
+    width: 90%!important;
+    padding-left: 2rem;
+    text-align: center;
 }
 
 .input-field i{
     color: #8f8f8f;
 }
 
-.margin-button{
-    margin:7rem;
+.input-field .prefix{
+    width: 1.5rem;
 }
 
 .check{
     padding-top: 5rem;
 }
 
+/*---sreenThree---*/
 
+.icon-clock{
+    position: absolute;
+    width: 2rem;
+    top: 4rem;
+    left:16rem;
+}
+
+.margin-button{
+    margin-top: 2rem;
+    margin-left:7rem;
+}
+
+.position{
+    position: relative;
+    top:3rem;
+}
+
+.span{
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+/*---sreenFour---*/
+
+.icon-lock{
+    width: 9rem!important;
+    margin-left: 7rem;
+    margin-top: 4rem;
+}

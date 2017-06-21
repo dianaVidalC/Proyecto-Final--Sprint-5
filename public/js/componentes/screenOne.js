@@ -3,22 +3,22 @@
  */
 'use strict';
 
-const ScreenOne =(update)=>{
+const screenOne =(update)=>{
     const container = $('<section class="container"></section>');
     const row       = $('<div class="row col s12"></div>');
     const div       = $('<div class="carousel carousel-slider" data-indicators=true"></div>');
     const item1     = $('<a class="carousel-item" href="#"></a>');
-    const img1      = $('<img class="responsive-img tamaño" src="img/icons/icon-people.png"/>');
+    const img1      = $('<img class="tamaño" src="img/icons/icon-people.png"/>');
     const div1      = $('<div></div>');
     const titulo1   = $('<h4 class="center-align"><strong>Paga a tus amigos</strong></h4>');
     const parrafo1  = $('<p class="center-align">Paga a quien quieras desde donde quieras, sin usar efectivo</p>');
     const item2     = $('<a class="carousel-item" href="#"></a>');
-    const img2      = $('<img class="responsive-img tamaño" src="img/icons/happy-person.png"/>');
+    const img2      = $('<img class="tamaño" src="img/icons/happy-person.png"/>');
     const div2      = $('<div></div>');
     const titulo2   = $('<h4 class="center-align"><strong>Sin número de cuenta</strong></h4>');
     const parrafo2  = $('<p class="center-align">Elige a quién pagar desde tu lista de contacto</p>');
     const item3     = $('<a class="carousel-item" href="#">');
-    const img3      = $('<img class="responsive-img tamaño" src="img/icons/group-people.png"/></a>');
+    const img3      = $('<img class="tamaño" src="img/icons/group-people.png"/></a>');
     const divButton = $('<div class="row col s12"></div>');
     const button    = $('<a class="waves-effect waves-light btn color-boton boton-reg">Registrarme</a>');
     const div3      = $('<div></div>');
