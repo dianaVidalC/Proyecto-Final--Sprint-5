@@ -51,11 +51,13 @@ const screenFour=(update)=>{
     container.append(rowForm);
 
     $(_=>{
-        input1.on('keypress',_=>{
-            input2.on('keypress',_=>{
-                    input3.on('keypress',_=>{
-                        if($('#icon_prefix3').val().length===6) {
-                            $('.margin-button').removeAttr('disabled');
+        input1.on('keypress keyup',_=>{
+            input2.on('keypress keyup',_=>{
+                    input3.on('keypress keyup',_=>{
+                        if(input3.val().length===6) {
+                            buttom.removeAttr('disabled');
+                        }else{
+                            buttom.attr('disabled','disabled');
                         }
                     })
 

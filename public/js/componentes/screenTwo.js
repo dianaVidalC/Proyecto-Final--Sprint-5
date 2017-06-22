@@ -40,8 +40,8 @@ const screenTwo=(update)=> {
     container.append(rowTexto);
     container.append(rowForm);
 
-   input.on('change',_=>{
-       inputCheck.on('change',_=>{
+    inputCheck.on('change',_=>{
+
            if(input.val().length===9 && inputCheck.prop('checked')) {
                button.removeAttr('disabled');
            }else if(inputCheck.prop('checked',false)&&input.val().length===9){
@@ -52,7 +52,7 @@ const screenTwo=(update)=> {
                }
            }
        })
-    })
+
 
     button.on('click',(e)=>{
         e.preventDefault();

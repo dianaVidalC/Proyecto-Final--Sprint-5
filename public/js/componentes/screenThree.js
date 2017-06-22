@@ -62,7 +62,7 @@ const intervalo=(span,update)=> {
             })
             update();
         }
-        $('.input-number').on('blur', _ =>{
+        $('.input-number').on('keypress keyup', _ =>{
 
             if($('.input-number').val()===state.codigo.toString()) {
 
