@@ -4,13 +4,6 @@
     font-family: 'Roboto';
 
 }
-
-.tamaño{
-    width: 15rem!important;
-    margin-left: 4rem;
-    margin-top: 6rem;
-}
-
 .boton-reg{
     margin-left:2.5rem;
     width: 80%;
@@ -26,6 +19,16 @@
 
 .carousel .indicators .indicator-item{
     background-color: #f8f8f8;
+}
+
+.slider-text{
+    color: #212121;
+}
+
+.tamaño{
+    width: 15rem!important;
+    margin-left: 4rem;
+    margin-top: 6rem;
 }
 /*---screenTwo---*/
 
@@ -49,7 +52,7 @@ span.color-turq{
 }
 
 .input-field i{
-    color: #8f8f8f;
+    color: #f8f8f8;
 }
 
 .input-field .prefix{
@@ -91,4 +94,32 @@ span.color-turq{
     width: 9rem!important;
     margin-left: 7rem;
     margin-top: 4rem;
+}
+/*---screenFive---*/
+
+.registrado{
+    height: 45.7rem;
+    width: 100%;
+    background-color: #FBD43B;
+}
+
+.icon-check{
+    width: 9rem!important;
+    margin-left: 8.5rem!important;
+    margin-top: 10rem;
+    color: #212121;
+
+}
+
+/*---screenSix---*/
+
+.tarjeta{
+    bottom: 10px;
+    width: 2rem;
+}
+
+.scan{
+    width: 2rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
 }

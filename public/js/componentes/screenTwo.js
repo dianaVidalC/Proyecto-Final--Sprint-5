@@ -4,6 +4,7 @@
 'use strict';
 
 const screenTwo=(update)=> {
+
     const container  = $('<section class="container"></section>');
     const rowTexto   = $('<div class="row"></div>');
     const div        = $('<div class="col s12"></div>');
@@ -14,13 +15,13 @@ const screenTwo=(update)=> {
     const divForm    = $('<div class="col s12"></div>');
     const divInput   = $('<div class="input-field col s12"></div>');
     const icono      = $('<i class="material-icons prefix">stay_current_portrait</i>');
-    const input      = $('<input id="icon_prefix" type="number" class="validate input-number phone" pattern="{9}">');
+    const input      = $('<input id="icon_prefix" type="number" class="validate input-number phone" pattern="[0-9]{9}" required>');
     const span       = $('<span class="span" contenteditable="false">(+51)</span>');
     const label      = $('<label for="icon_prefix"></label>');
     const check      = $('<p class="center-align check"></p>');
     const inputCheck = $('<input type="checkbox" class="filled-in" id="filled-in-box"/>');
     const labelCheck = $('<label for="filled-in-box">Acepto los <span class="color-turq">Términos y condiciones.</span></label>')
-    const buttom     = $('<a class="waves-effect waves-light btn color-boton margin-button" disabled="disabled">Continuar</a>')
+    const button     = $('<a class="waves-effect waves-light btn color-boton margin-button" disabled="disabled">Continuar</a>')
 
     div.append(img);
     div.append(titulo);
@@ -35,19 +36,34 @@ const screenTwo=(update)=> {
     check.append(labelCheck);
     divForm.append(check);
     rowForm.append(divForm);
-    rowForm.append(buttom);
+    rowForm.append(button);
     container.append(rowTexto);
     container.append(rowForm);
 
-    valorInput();
+   input.on('change',_=>{
+       inputCheck.on('change',_=>{
+           if(input.val().length===9 && inputCheck.prop('checked')) {
+               button.removeAttr('disabled');
+           }else if(inputCheck.prop('checked',false)&&input.val().length===9){
+               button.attr('disabled','disabled');
+           }else if(input.val().length!==9){
+               if(inputCheck.prop('checked')) {
+                   button.attr('disabled', 'disabled');
+               }
+           }
+       })
+    })
 
-    buttom.on('click',(e)=>{
+    button.on('click',(e)=>{
         e.preventDefault();
         $.post( "http://localhost:1080/api/registerNumber", {
 
             "phone": $('.phone').val(),
-            "terms": true,
+            "terms": true
 
+        },(response)=>{
+            console.log(response);
+            state.codigo=response.data.code;
         })
         state.newPhone   = $('.phone').val();
         state.screenTwo  = null;
@@ -58,17 +74,5 @@ const screenTwo=(update)=> {
     return container;
 }
 
-const valorInput=_=> {
-
-    $(_ => {
-        if ($('.phone') && $('.filled-in')) {
-            if ($('.margin-button')) {
-
-                $('.margin-button').removeAttr('disabled');
-            }
-        }
-
-    })
-}
 
 

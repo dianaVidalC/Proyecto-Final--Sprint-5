@@ -36,12 +36,19 @@ const render=(root)=> {
         }));
 
     }
+   if (state.screenSix=== "true") {
+        wrapper.append(screenSix(_ => {
+            render(root);
+        }));
+
+    }
     root.append(wrapper);
 
 }
 
 const state = {
     newPhone   : null,
+    codigo     : null,
     screenOne  : null,
     screenTwo  : null,
     screenThree: null,
