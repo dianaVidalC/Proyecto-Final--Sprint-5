@@ -40,7 +40,7 @@ p.color-gris{
     color: #8f8f8f;
 }
 
-span.color-turq{
+.color-turq{
     color: #00c3a3;
 }
 
@@ -113,13 +113,99 @@ span.color-turq{
 
 /*---screenSix---*/
 
-.tarjeta{
-    bottom: 10px;
-    width: 2rem;
+.img-slash{
+    width: 2.8rem!important;
+    height: 2rem;
+    margin-top: 1rem;
 }
 
 .scan{
     width: 2rem;
     margin-left: 6rem;
     margin-top: 1rem;
+}
+
+.pos-relative{
+    position: relative;
+    top: 1rem;
+}
+.pos-relative-span{
+    position: relative;
+    top: -0.5rem;
+    left:1rem;
+    color: #00c3a3;
+}
+
+.tarjeta{
+    bottom: 10px;
+    width: 2rem;
+}
+/*---screenEigth---*/
+.engenie{
+    width: 3rem!important;
+    position: relative;
+    top: -2rem;
+    left: 19rem!important;
+}
+
+.eyes{
+    position: relative;
+    top: 9.4rem;
+    right: 10rem!important;
+    width: 2rem!important;
+
+}
+
+.envio{
+    position: relative;
+    width: 9rem!important;
+    top:9rem;
+    left:-6.5rem;
+}
+.face{
+    width: 11rem;
+    margin-left:1rem;
+}
+
+.fondo-purple-dark{
+    color:#fff;
+    height: 28rem;
+    background-color: #38052a;
+}
+.fondo-purple-ligth {
+    height: 18rem;
+    padding: 3rem;
+    background-color: #451e36;
+    opacity: 0.8;
+}
+
+.hola{
+    color: #fff!important;
+    position: relative;
+    top: 9rem;
+    right: 7rem;
+}
+
+.saldo{
+    color: #00c3a3;
+    position: relative;
+    top: 4rem;
+    left: 8rem;
+    display: inline-block;
+}
+
+.pago{
+    position: relative;
+    width: 7rem;
+    left: -1rem;
+    top: 9rem;
+}
+
+.white{
+
+    color: #FFFF!important;
+}
+
+hr{
+    width: 100%;
 }

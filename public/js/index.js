@@ -42,18 +42,38 @@ const render=(root)=> {
         }));
 
     }
+    if (state.screenSeven=== "true") {
+        wrapper.append(screenSeven(_ => {
+            render(root);
+        }));
+
+    }
+    if (state.screenEigth== "true") {
+        wrapper.append(screenEigth(_ => {
+            render(root);
+        }));
+
+    }
     root.append(wrapper);
 
 }
 
 const state = {
+
     newPhone   : null,
     codigo     : null,
+    numeroCard : null,
+    yearCard   : null,
+    mesCard    : null,
     screenOne  : null,
     screenTwo  : null,
     screenThree: null,
     screenFour : null,
-    screenFive : null
+    screenFive : null,
+    screenSix  : null,
+    screenSeven: null,
+    screenEigth: null
+
 }
 
 $(_ => {
