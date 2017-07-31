@@ -37,6 +37,7 @@ const screenThree=(update)=> {
 
     $(_ => {
         if (input.val().length === 0) {
+            $('.code').append(state.codigo);
             intervalo(span, update);
         }
     })
