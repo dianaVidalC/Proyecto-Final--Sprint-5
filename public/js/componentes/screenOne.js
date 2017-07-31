@@ -8,7 +8,7 @@ const screenOne =(update)=>{
     const row       = $('<div class="row col s12"></div>');
     const div       = $('<div class="carousel carousel-slider" data-indicators=true"></div>');
     const item1     = $('<a class="carousel-item" href="#"></a>');
-    const img1      = $('<img class="tamaño" src="img/icons/icon-people.png"/>');
+    const img1      = $('<img class="tamaño responsive-img" src="img/icons/icon-people.png"/>');
     const div1      = $('<div></div>');
     const titulo1   = $('<h4 class="center-align slider-text"><strong>Paga a tus amigos</strong></h4>');
     const parrafo1  = $('<p class="center-align slider-text">Paga a quien quieras desde donde quieras, sin usar efectivo</p>');

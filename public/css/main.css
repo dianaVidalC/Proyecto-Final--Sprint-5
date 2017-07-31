@@ -1,12 +1,12 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 
 }
 .boton-reg{
-    margin-left:2.5rem;
-    width: 80%;
+    margin-left: 21.5rem;
+    width: 15rem;
 }
 
 .carousel.initialized{
@@ -26,9 +26,16 @@
 }
 
 .tamaño{
-    width: 15rem!important;
-    margin-left: 4rem;
+    width: 17rem!important;
+    margin-left: 20rem;
     margin-top: 6rem;
+}
+
+@media (max-width:760px) {
+    .tamaño,
+    .boton-reg{
+        margin-left: 6.5rem;
+    }
 }
 /*---screenTwo---*/
 
@@ -202,7 +209,6 @@ p.color-gris{
 }
 
 .white{
-
     color: #FFFF!important;
 }
 
