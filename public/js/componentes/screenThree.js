@@ -18,6 +18,7 @@ const screenThree=(update)=> {
     const label     = $('<label for="icon_prefix"></label>');
     const time      = $('<p class="center-align position">Reintentar en <img class="icon-clock" src="img/icons/clock.png"/></p>');
     const span      = $('<span class="contador"> 21</span>');
+    const divCode   = $('<div class= col s12><p>La clave es:</p><span class="code"></span></div>');
 
     div.append(img);
     div.append(titulo);
@@ -32,6 +33,7 @@ const screenThree=(update)=> {
     rowForm.append(divForm);
     container.append(rowTexto);
     container.append(rowForm);
+    container.append(divCode);
 
     $(_ => {
         if (input.val().length === 0) {
@@ -58,7 +60,7 @@ const intervalo=(span,update)=> {
             }, (response) => {
                 clearInterval(tiempo);
                 state.codigo = response.data;
-
+                $('.code').append(state.codigo);
             })
             update();
         }

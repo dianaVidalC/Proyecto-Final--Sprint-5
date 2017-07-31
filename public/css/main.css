@@ -32,9 +32,12 @@
 }
 
 @media (max-width:760px) {
-    .tamaño,
+
     .boton-reg{
         margin-left: 6.5rem;
+    }
+    .tamaño{
+        margin-left: 5rem;
     }
 }
 /*---screenTwo---*/
@@ -81,7 +84,7 @@ p.color-gris{
 
 .margin-button{
     margin-top: 2rem;
-    margin-left:7rem;
+    margin-left:9rem;
 }
 
 .position{
